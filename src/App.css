@@ -1,38 +1,247 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-image: url(https://lh3.googleusercontent.com/POWVgRVRMEjpg44umpsr4byMtKs7O6TjPrb7V1boYhgsw9IW0DUY3qqk_yJBDHwqH1bmDOEY2FHPhrdoPn5kyiu-JP_76zWjcadACGa_pjUWnyD8MDWsH1FZjtUotAYhsynTjz6-=w2400);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1,
+h2,
+h6 {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Main-Navbar */
+#main-navbar {
+  display: inline;
+  font-family: "Roboto", sans-serif;
+}
+#brand {
+  color: white;
+  float: left;
+  padding-left: 4rem;
+  padding-top: 1.5rem;
+  letter-spacing: 0.02em;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+#basic-navbar-nav {
+  color: white;
+  float: right;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  font-size: 16px;
+}
+#main-navbar > .navbar-collapse > .navbar-nav > .nav-link > a {
+  color: white;
+  font-size: 18px;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  text-decoration: none;
+}
+#main-navbar > .navbar-collapse > .navbar-nav {
+  color: red;
+}
+#toggler {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+  float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* LandingPage */
+#typed_banner {
+  font-family: "Jomolhari", serif;
+  font-size: 100px;
+  line-height: 1;
+  color: white;
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  padding-left: 4rem;
+}
+.container > #typed_banner > .btn-primary {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 50px;
+}
+#hireMeButton {
+  border: 1px solid white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: white;
+}
+#viewResumeButton {
+  border: 1px solid white;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-left: 15px;
+  color: white;
+}
+.container > #typed_banner > .btn-primary:hover {
+  background-color: lightslategrey;
+  opacity: 0.9;
+  color: white;
+}
+.container > #typed_banner > .btn-primary {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+/* AboutMe */
+.col > p {
+  color: white;
+  font-size: 20px;
+  background-color: gray;
+  border: 1px solid black;
+}
+#aboutme-container {
+  margin-top: 3rem;
+  text-align: center;
+  width: 50%;
+}
+#rk-image {
+  border: 1px solid #ddd;
+  padding: 5px;
+  width: 400px;
+  height: 400px;
+}
+
+/*Projects*/
+#projects-container {
+  margin-top: 3rem;
+  text-align: center;
+  width: 50%;
+}
+
+/* Resume */
+#resume-container {
+  color: black;
+  font-weight: 500;
+  background-color: gray;
+  padding: 1rem;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+.container > h1 {
+  margin-top: 3rem;
+  text-align: center;
+}
+#resume-container > h2,
+h6 {
+  color: black;
+}
+
+/* Contact Me */
+#contact-container {
+  text-align: center;
+  width: 70%;
+}
+#hiRagu-image {
+  width: 300px;
+  height: 300px;
+  border: 3px solid black;
+}
+form {
+  font-size: 20px;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  color: white;
+  background-color: gray;
+  border: 3px solid black;
+}
+#contact-button {
+  padding: 0 1rem;
+}
+.flex-outer li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.flex-outer {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.flex-outer > li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+.flex-outer > li > label,
+.flex-outer li p {
+  flex: 1;
+  max-width: 100px;
+}
+.flex-outer > li > label + *,
+.flex-inner {
+  flex: 1;
+}
+.flex-outer li input,
+.flex-outer li textarea {
+  padding: 0.5rem;
+  border: black;
+}
+.flex-outer button {
+  padding: 0.5rem 2rem;
+  margin-bottom: 1rem;
+  border: none;
+  background: #333;
+  color: #f2f2f2;
+}
+
+@media only screen and (max-width: 800px) {
+  /* Main Navbar */
+  #brand {
+    padding-left: 2rem;
+    font-size: 18px;
   }
-  to {
-    transform: rotate(360deg);
+  /* Landing Page */
+  #typed_banner {
+    font-size: 50px;
+    padding-left: 2rem;
+    bottom: 5%;
+  }
+  .container > #typed_banner > .btn-primary {
+    font-size: 12px;
+    padding: 3px 12px;
+  }
+  #main-navbar > .navbar-collapse > .navbar-nav > .nav-link > a {
+    font-size: 15px;
+    padding-right: 0rem;
+    padding-left: 0rem;
+  }
+  /* AboutMe */
+  .col > p {
+    font-size: 16px;
+  }
+  #aboutme-container {
+    width: 80%;
+  }
+  #rk-image {
+    width: 250px;
+    height: 250px;
+  }
+  /*Projects*/
+  #projects-container {
+    width: 90%;
+  }
+  .card-text {
+    font-size: 12px;
+  }
+  /* Resume */
+  .container > h1,
+  h2,
+  h6 {
+    margin-top: 3rem;
+    text-align: center;
   }
 }
