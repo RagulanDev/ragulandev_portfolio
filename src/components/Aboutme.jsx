@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Col } from "react-bootstrap";
-import rk from "../images/ragulan.png";
+import rk from "../images/ragulan.jpg";
 
 class Aboutme extends Component {
   render() {
