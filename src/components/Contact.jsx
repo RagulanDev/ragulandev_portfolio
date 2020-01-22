@@ -43,7 +43,9 @@ class Contact extends Component {
                       placeholder="Enter your message here..."
                     ></textarea>
                   </li>
-                  <button type="submit">Submit</button>
+                  <button type="submit" disabled>
+                    Coming Soon!
+                  </button>
                 </ul>
               </form>
             </Col>
